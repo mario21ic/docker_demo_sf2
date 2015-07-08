@@ -11,3 +11,6 @@ security:
 
         main:
             anonymous: ~
+
+    encoders:
+        "FOS\UserBundle\Model\UserInterface": sha512
