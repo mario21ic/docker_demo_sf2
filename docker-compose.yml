@@ -3,13 +3,11 @@ web:
   volumes:
    - ./src:/var/www/html
   links:
-  - db
+  - mysqldb
   ports:
   - "80:80"
-db:
+mysqldb:
   image: mysql:latest
-  ports:
-  - "3306:3306"
   environment:
     MYSQL_DATABASE: symfony_db
     MYSQL_USER: root

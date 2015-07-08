@@ -2,6 +2,7 @@
 /src/app/cache/*
 /src/!app/cache/.gitkeep
 /src/app/config/parameters.yml
+/src/app/config/parameters.php
 /src/app/logs/*
 /src/!app/logs/.gitkeep
 /src/app/phpunit.xml

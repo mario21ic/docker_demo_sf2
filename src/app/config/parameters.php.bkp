@@ -1,0 +1,13 @@
+<?php
+
+$container->setParameter('database_host', 'localhost');
+$container->setParameter('database_port', 3306);
+$container->setParameter('database_name', getenv('MYSQL_DATABASE'));
+$container->setParameter('database_user', getenv('MYSQL_USER'));
+$container->setParameter('database_password', getenv('MYSQL_ROOT_PASSWORD'));
+$container->setParameter('secret', 'ThisTokenIsNotSoSecretChangeIt');
+
+$container->setParameter('mailer_transport', 'smtp');
+$container->setParameter('mailer_host', 'localhost');
+$container->setParameter('mailer_user', '~');
+$container->setParameter('mailer_password', '~');
